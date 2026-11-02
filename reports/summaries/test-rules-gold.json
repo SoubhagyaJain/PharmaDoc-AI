@@ -1,0 +1,276 @@
+{
+  "created_at_utc": "2026-11-02T12:24:16.990981+00:00",
+  "split": "test",
+  "source": "gold",
+  "extraction_method": "rules",
+  "ocr_engine": "tesseract",
+  "preprocessing": "raw",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "document_ids": [
+    "prescription-5-026",
+    "prescription-5-000",
+    "prescription-5-011",
+    "prescription-5-007",
+    "prescription-5-002",
+    "prescription-5-010",
+    "prescription-5-017",
+    "prescription-5-022",
+    "prescription-5-024",
+    "prescription-5-004",
+    "prescription-5-023",
+    "prescription-5-012",
+    "prescription-5-008",
+    "prescription-5-027",
+    "prescription-5-019",
+    "prescription-5-025",
+    "prescription-5-003",
+    "prescription-5-028",
+    "prescription-5-021",
+    "prescription-5-020",
+    "prescription-5-001",
+    "prescription-5-009",
+    "prescription-5-029",
+    "prescription-5-015",
+    "prescription-5-018",
+    "prescription-5-016",
+    "prescription-5-006",
+    "prescription-5-013",
+    "prescription-5-014",
+    "prescription-5-005"
+  ],
+  "documents": 30,
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 0.3333333333333333,
+    "labels": [
+      "prescription",
+      "clinical_form",
+      "regulatory",
+      "unknown"
+    ],
+    "confusion_matrix": [
+      [
+        30,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "unknown_rate": 0.0
+  },
+  "entities": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 317,
+    "fp": 0,
+    "fn": 0
+  },
+  "fields": {
+    "exact_match_accuracy_present": 1.0,
+    "present_fields": 317,
+    "correct_fields": 317,
+    "absent_fields": 3,
+    "false_fills": 0,
+    "false_fill_rate": 0.0,
+    "per_field": {
+      "patient_name": {
+        "total": 30,
+        "correct": 30
+      },
+      "document_date": {
+        "total": 30,
+        "correct": 30
+      },
+      "prescriber_name": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.name": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.strength": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.instructions": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.frequency": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.1.name": {
+        "total": 13,
+        "correct": 13
+      },
+      "medications.1.strength": {
+        "total": 13,
+        "correct": 13
+      },
+      "medications.1.administered_dose": {
+        "total": 13,
+        "correct": 13
+      },
+      "medications.1.instructions": {
+        "total": 13,
+        "correct": 13
+      },
+      "medications.1.frequency": {
+        "total": 13,
+        "correct": 13
+      },
+      "medications.0.administered_dose": {
+        "total": 27,
+        "correct": 27
+      },
+      "medications.2.name": {
+        "total": 3,
+        "correct": 3
+      },
+      "medications.2.strength": {
+        "total": 3,
+        "correct": 3
+      },
+      "medications.2.administered_dose": {
+        "total": 3,
+        "correct": 3
+      },
+      "medications.2.instructions": {
+        "total": 3,
+        "correct": 3
+      },
+      "medications.2.frequency": {
+        "total": 3,
+        "correct": 3
+      }
+    }
+  },
+  "checkboxes": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "state_accuracy_all_ground_truth": 0.0,
+    "ground_truth_boxes": 0
+  },
+  "unsupported_fields": {
+    "rejected_candidates": 0,
+    "candidates": 317,
+    "rejected_candidate_rate": 0.0,
+    "emitted_unsupported_rate": 0.0,
+    "limitation": "Evidence checks do not detect every semantic role error; ground-truth precision and false fills remain necessary."
+  },
+  "human_review_rate": 0.16666666666666666,
+  "failed_documents": 0,
+  "errors": {},
+  "review_reasons": {
+    "missing_required_fields": 3,
+    "ambiguous_field": 2,
+    "ambiguous_frequency": 2
+  },
+  "latency": {
+    "median_seconds": 0.0,
+    "p95_seconds": 0.01600000000325963,
+    "samples": 30
+  },
+  "failure_examples": [
+    {
+      "document_id": "prescription-5-026",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    },
+    {
+      "document_id": "prescription-5-000",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    },
+    {
+      "document_id": "prescription-5-001",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_field",
+        "ambiguous_frequency"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-5-018",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_field",
+        "ambiguous_frequency"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-5-013",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    }
+  ],
+  "configuration": {
+    "max_upload_bytes": 20971520,
+    "max_pages": 10,
+    "max_pixels": 25000000,
+    "render_dpi": 200,
+    "ocr_engine": "tesseract",
+    "extraction_method": "rules",
+    "preprocessing": "raw",
+    "force_ocr": false,
+    "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "ocr_timeout_seconds": 30.0,
+    "document_timeout_seconds": 180.0,
+    "minimum_ocr_score": 55.0,
+    "paddle_python": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\.venv-paddle\\Scripts\\python.exe",
+    "paddle_det_model": "PP-OCRv5_mobile_det",
+    "paddle_rec_model": "en_PP-OCRv5_mobile_rec",
+    "classifier_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\classifier.joblib",
+    "ner_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\ner",
+    "ollama_host": "http://127.0.0.1:11434",
+    "ollama_model": "qwen3.5:4b",
+    "llm_timeout_seconds": 30.0,
+    "llm_context_tokens": 4096,
+    "api_url": "http://127.0.0.1:8000"
+  },
+  "source_fingerprint": "f1f9acb11416561ecbffd27e016cde0932f6b37dd8474305f92aea96aeaeedf0",
+  "source_changed_during_run": false
+}

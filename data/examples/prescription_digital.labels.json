@@ -1,0 +1,543 @@
+{
+  "document_id": "prescription-0-002",
+  "category": "prescription",
+  "split": "train",
+  "template_family": "prescription-layout-0",
+  "patient_record_id": "train-Dev Pal",
+  "lineage_id": "prescription-0-002",
+  "path": "prescription-0-002.pdf",
+  "fields": {
+    "patient_name": "Dev Pal",
+    "document_date": "2025-12-15",
+    "prescriber_name": "Dr. Dev Pal"
+  },
+  "medications": [
+    {
+      "name": "Metformin",
+      "strength": "500 mg",
+      "administered_dose": "1 tablet",
+      "instructions": "Take 1 tablet once daily.",
+      "frequency": "once daily"
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "SYNTHETIC - NOT FOR CLINICAL USE\nMedical Prescription\nPatient name: Dev Pal\nDocument date: 2025-12-15\nPrescriber: Dr. Dev Pal\nMedication: Metformin | Strength: 500 mg\nDirections: Take 1 tablet once daily.\nPharmaDoc AI fictional training document",
+      "words": [
+        {
+          "text": "SYNTHETIC",
+          "bbox": [
+            0.058823529411764705,
+            0.02176365886334852,
+            0.14454285437319458,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "-",
+          "bbox": [
+            0.1487478945435596,
+            0.02176365886334852,
+            0.15378487210313813,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "NOT",
+          "bbox": [
+            0.15798991227350315,
+            0.02176365886334852,
+            0.1899210056336988,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "FOR",
+          "bbox": [
+            0.1941260458040638,
+            0.02176365886334852,
+            0.22605713916425946,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "CLINICAL",
+          "bbox": [
+            0.23026217933462448,
+            0.02176365886334852,
+            0.2983445367893251,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "USE",
+          "bbox": [
+            0.30254957695969015,
+            0.02176365886334852,
+            0.3336487585756959,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Medical",
+          "bbox": [
+            0.07563025210084033,
+            0.06380641148945498,
+            0.17405885327763918,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Prescription",
+          "bbox": [
+            0.18200170693277312,
+            0.06380641148945498,
+            0.33283027200137866,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Patient",
+          "bbox": [
+            0.07563025210084033,
+            0.15816508675980737,
+            0.13318150624507616,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "name:",
+          "bbox": [
+            0.1383209997866334,
+            0.15816508675980737,
+            0.18969745796267726,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Dev",
+          "bbox": [
+            0.1948369515042345,
+            0.15816508675980737,
+            0.22770755030527837,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Pal",
+          "bbox": [
+            0.2328470438468356,
+            0.15816508675980737,
+            0.25956133674172793,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Document",
+          "bbox": [
+            0.07563025210084033,
+            0.18548100124911854,
+            0.15987729625541622,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "date:",
+          "bbox": [
+            0.16501678979697348,
+            0.18548100124911854,
+            0.20613273812943145,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "2025-12-15",
+          "bbox": [
+            0.2112722316709887,
+            0.18548100124911854,
+            0.3058167273256959,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Prescriber:",
+          "bbox": [
+            0.07563025210084033,
+            0.2127969157384297,
+            0.16499831255744485,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Dr.",
+          "bbox": [
+            0.17013780609900211,
+            0.2127969157384297,
+            0.1947815069631368,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Dev",
+          "bbox": [
+            0.19992100050469405,
+            0.2127969157384297,
+            0.23279159930573792,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Pal",
+          "bbox": [
+            0.23793109284729516,
+            0.2127969157384297,
+            0.2646453857421875,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Medication:",
+          "bbox": [
+            0.07563025210084033,
+            0.257927557068596,
+            0.17015629616104255,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Metformin",
+          "bbox": [
+            0.1752957897025998,
+            0.257927557068596,
+            0.2574722418264181,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "|",
+          "bbox": [
+            0.26261173536797533,
+            0.257927557068596,
+            0.2674184590828519,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Strength:",
+          "bbox": [
+            0.2725579526244091,
+            0.257927557068596,
+            0.34757977653952205,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "500",
+          "bbox": [
+            0.3527192700810793,
+            0.257927557068596,
+            0.38355623133042277,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "mg",
+          "bbox": [
+            0.38869572487198006,
+            0.257927557068596,
+            0.41437470251772585,
+            0.27587767394874557
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Directions:",
+          "bbox": [
+            0.07563025210084033,
+            0.28524347155790714,
+            0.16294621058872769,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Take",
+          "bbox": [
+            0.16808570413028492,
+            0.28524347155790714,
+            0.20918317522321428,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "1",
+          "bbox": [
+            0.21432266876477155,
+            0.28524347155790714,
+            0.22460165584788602,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "tablet",
+          "bbox": [
+            0.2297411493894433,
+            0.28524347155790714,
+            0.27496130165933563,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "once",
+          "bbox": [
+            0.28010079520089287,
+            0.28524347155790714,
+            0.3201814539292279,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "daily.",
+          "bbox": [
+            0.3253209474707852,
+            0.28524347155790714,
+            0.36847052053243173,
+            0.3031935884380567
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "PharmaDoc",
+          "bbox": [
+            0.058823529411764705,
+            0.9636579862399792,
+            0.1298016844677324,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "AI",
+          "bbox": [
+            0.1335394979525013,
+            0.9636579862399792,
+            0.1462453762022387,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "fictional",
+          "bbox": [
+            0.1499831896870076,
+            0.9636579862399792,
+            0.19556301341337315,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "training",
+          "bbox": [
+            0.19930082689814207,
+            0.9636579862399792,
+            0.24338820000656514,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "document",
+          "bbox": [
+            0.24712601349133403,
+            0.9636579862399792,
+            0.3061646533613445,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "page_number": 1,
+      "start": 68,
+      "end": 75,
+      "label": "PATIENT"
+    },
+    {
+      "page_number": 1,
+      "start": 91,
+      "end": 101,
+      "label": "DATE"
+    },
+    {
+      "page_number": 1,
+      "start": 114,
+      "end": 125,
+      "label": "PRESCRIBER"
+    },
+    {
+      "page_number": 1,
+      "start": 138,
+      "end": 147,
+      "label": "MEDICATION"
+    },
+    {
+      "page_number": 1,
+      "start": 160,
+      "end": 166,
+      "label": "STRENGTH"
+    },
+    {
+      "page_number": 1,
+      "start": 184,
+      "end": 192,
+      "label": "DOSE"
+    },
+    {
+      "page_number": 1,
+      "start": 193,
+      "end": 203,
+      "label": "FREQUENCY"
+    }
+  ],
+  "evidence": {
+    "patient_name": {
+      "page_number": 1,
+      "text": "Dev Pal"
+    },
+    "document_date": {
+      "page_number": 1,
+      "text": "2025-12-15"
+    },
+    "prescriber_name": {
+      "page_number": 1,
+      "text": "Dr. Dev Pal"
+    },
+    "medications.0.name": {
+      "page_number": 1,
+      "text": "Metformin"
+    },
+    "medications.0.strength": {
+      "page_number": 1,
+      "text": "500 mg"
+    },
+    "medications.0.administered_dose": {
+      "page_number": 1,
+      "text": "1 tablet"
+    },
+    "medications.0.instructions": {
+      "page_number": 1,
+      "text": "Take 1 tablet once daily."
+    },
+    "medications.0.frequency": {
+      "page_number": 1,
+      "text": "once daily"
+    }
+  },
+  "checkboxes": [],
+  "sha256": "a6d9af0f9272019d99e49aeeccd2843438e55a29c6633223e4436c1679433103"
+}

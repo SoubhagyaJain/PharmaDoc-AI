@@ -1,0 +1,33 @@
+{
+  "frozen_at_utc": "2026-11-02T12:12:55.167210+00:00",
+  "source_fingerprint": "f1f9acb11416561ecbffd27e016cde0932f6b37dd8474305f92aea96aeaeedf0",
+  "git_revision": "55d7ef9cabeddaafea1fc5eef9407912ad1dcc1c",
+  "manifest_sha256": "a021ad9a0ab325eda15f83daf902cc278eda59d55f3eb411d1907df75b0c5da3",
+  "python": "3.11.9",
+  "protocol": "30 paired held-out OCR pages; raw/adaptive chosen before test. Prescription extraction: same 30 test IDs for all three methods on gold text and clean scanned documents. Rules digital: all 50 test documents.",
+  "selection_basis": "Adaptive selected from the declared validation preprocessing experiment, never from test performance. Validation was exploratory during development; final runs are serial.",
+  "configuration": {
+    "max_upload_bytes": 20971520,
+    "max_pages": 10,
+    "max_pixels": 25000000,
+    "render_dpi": 200,
+    "ocr_engine": "tesseract",
+    "extraction_method": "rules",
+    "preprocessing": "raw",
+    "force_ocr": false,
+    "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "ocr_timeout_seconds": 30.0,
+    "document_timeout_seconds": 180.0,
+    "minimum_ocr_score": 55.0,
+    "paddle_python": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\.venv-paddle\\Scripts\\python.exe",
+    "paddle_det_model": "PP-OCRv5_mobile_det",
+    "paddle_rec_model": "en_PP-OCRv5_mobile_rec",
+    "classifier_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\classifier.joblib",
+    "ner_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\ner",
+    "ollama_host": "http://127.0.0.1:11434",
+    "ollama_model": "qwen3.5:4b",
+    "llm_timeout_seconds": 30.0,
+    "llm_context_tokens": 4096,
+    "api_url": "http://127.0.0.1:8000"
+  }
+}

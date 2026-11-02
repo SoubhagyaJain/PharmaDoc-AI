@@ -1,0 +1,215 @@
+{
+  "created_at_utc": "2026-11-02T12:01:34.082538+00:00",
+  "model": "qwen3.5:4b",
+  "context_tokens": 4096,
+  "call_timeout_seconds": 90,
+  "calls": [
+    {
+      "call": 1,
+      "model_loaded_before_call": false,
+      "seconds": 26.328999999997905,
+      "status": "complete",
+      "review_reasons": [],
+      "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "load_seconds": 12.5614418,
+      "generation_seconds": 12.25174,
+      "generated_tokens": 393
+    },
+    {
+      "call": 2,
+      "model_loaded_before_call": true,
+      "seconds": 14.328000000008615,
+      "status": "complete",
+      "review_reasons": [],
+      "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "load_seconds": 0.0177561,
+      "generation_seconds": 12.928633,
+      "generated_tokens": 393
+    }
+  ],
+  "samples": [
+    {
+      "monotonic_seconds": 155709.687,
+      "system_gpu_memory_mib": 514,
+      "system_available_ram_mib": 4593.94140625
+    },
+    {
+      "monotonic_seconds": 155710.781,
+      "system_gpu_memory_mib": 507,
+      "system_available_ram_mib": 4551.54296875
+    },
+    {
+      "monotonic_seconds": 155711.89,
+      "system_gpu_memory_mib": 511,
+      "system_available_ram_mib": 4485.65625
+    },
+    {
+      "monotonic_seconds": 155713.203,
+      "system_gpu_memory_mib": 511,
+      "system_available_ram_mib": 4411.484375
+    },
+    {
+      "monotonic_seconds": 155714.328,
+      "system_gpu_memory_mib": 506,
+      "system_available_ram_mib": 4310.109375
+    },
+    {
+      "monotonic_seconds": 155715.437,
+      "system_gpu_memory_mib": 592,
+      "system_available_ram_mib": 4043.82421875
+    },
+    {
+      "monotonic_seconds": 155716.593,
+      "system_gpu_memory_mib": 3108,
+      "system_available_ram_mib": 2997.07421875
+    },
+    {
+      "monotonic_seconds": 155717.859,
+      "system_gpu_memory_mib": 3103,
+      "system_available_ram_mib": 2988.8359375
+    },
+    {
+      "monotonic_seconds": 155719.609,
+      "system_gpu_memory_mib": 3108,
+      "system_available_ram_mib": 2994.3828125
+    },
+    {
+      "monotonic_seconds": 155720.875,
+      "system_gpu_memory_mib": 3368,
+      "system_available_ram_mib": 3147.64453125
+    },
+    {
+      "monotonic_seconds": 155722.0,
+      "system_gpu_memory_mib": 4024,
+      "system_available_ram_mib": 3393.48046875
+    },
+    {
+      "monotonic_seconds": 155723.125,
+      "system_gpu_memory_mib": 4024,
+      "system_available_ram_mib": 3597.484375
+    },
+    {
+      "monotonic_seconds": 155724.265,
+      "system_gpu_memory_mib": 4271,
+      "system_available_ram_mib": 3421.546875
+    },
+    {
+      "monotonic_seconds": 155725.39,
+      "system_gpu_memory_mib": 4271,
+      "system_available_ram_mib": 3345.38671875
+    },
+    {
+      "monotonic_seconds": 155726.546,
+      "system_gpu_memory_mib": 4279,
+      "system_available_ram_mib": 3355.6953125
+    },
+    {
+      "monotonic_seconds": 155727.703,
+      "system_gpu_memory_mib": 4290,
+      "system_available_ram_mib": 3313.51953125
+    },
+    {
+      "monotonic_seconds": 155728.812,
+      "system_gpu_memory_mib": 4284,
+      "system_available_ram_mib": 3149.62109375
+    },
+    {
+      "monotonic_seconds": 155729.953,
+      "system_gpu_memory_mib": 4281,
+      "system_available_ram_mib": 3141.19921875
+    },
+    {
+      "monotonic_seconds": 155731.171,
+      "system_gpu_memory_mib": 4360,
+      "system_available_ram_mib": 3171.8828125
+    },
+    {
+      "monotonic_seconds": 155732.296,
+      "system_gpu_memory_mib": 4358,
+      "system_available_ram_mib": 3144.06640625
+    },
+    {
+      "monotonic_seconds": 155733.468,
+      "system_gpu_memory_mib": 4300,
+      "system_available_ram_mib": 3159.46875
+    },
+    {
+      "monotonic_seconds": 155734.593,
+      "system_gpu_memory_mib": 4292,
+      "system_available_ram_mib": 3217.3984375
+    },
+    {
+      "monotonic_seconds": 155735.796,
+      "system_gpu_memory_mib": 4290,
+      "system_available_ram_mib": 2860.24609375
+    },
+    {
+      "monotonic_seconds": 155736.921,
+      "system_gpu_memory_mib": 4283,
+      "system_available_ram_mib": 2889.01953125
+    },
+    {
+      "monotonic_seconds": 155738.125,
+      "system_gpu_memory_mib": 4280,
+      "system_available_ram_mib": 2852.84765625
+    },
+    {
+      "monotonic_seconds": 155739.265,
+      "system_gpu_memory_mib": 4272,
+      "system_available_ram_mib": 3046.9296875
+    },
+    {
+      "monotonic_seconds": 155740.421,
+      "system_gpu_memory_mib": 4271,
+      "system_available_ram_mib": 3280.6328125
+    },
+    {
+      "monotonic_seconds": 155741.546,
+      "system_gpu_memory_mib": 4291,
+      "system_available_ram_mib": 3775.828125
+    },
+    {
+      "monotonic_seconds": 155742.718,
+      "system_gpu_memory_mib": 4289,
+      "system_available_ram_mib": 3737.25390625
+    },
+    {
+      "monotonic_seconds": 155743.843,
+      "system_gpu_memory_mib": 4288,
+      "system_available_ram_mib": 3728.98046875
+    },
+    {
+      "monotonic_seconds": 155744.953,
+      "system_gpu_memory_mib": 4290,
+      "system_available_ram_mib": 3714.21484375
+    },
+    {
+      "monotonic_seconds": 155746.015,
+      "system_gpu_memory_mib": 4283,
+      "system_available_ram_mib": 3674.15234375
+    },
+    {
+      "monotonic_seconds": 155747.156,
+      "system_gpu_memory_mib": 4275,
+      "system_available_ram_mib": 3590.6640625
+    },
+    {
+      "monotonic_seconds": 155748.234,
+      "system_gpu_memory_mib": 4258,
+      "system_available_ram_mib": 3570.8984375
+    },
+    {
+      "monotonic_seconds": 155749.343,
+      "system_gpu_memory_mib": 4258,
+      "system_available_ram_mib": 3503.92578125
+    },
+    {
+      "monotonic_seconds": 155750.453,
+      "system_gpu_memory_mib": 4271,
+      "system_available_ram_mib": 3467.14453125
+    }
+  ],
+  "observed_peak_system_gpu_memory_mib": 4360,
+  "minimum_observed_available_system_ram_mib": 2852.84765625,
+  "interpretation": "Sampled total system GPU/RAM usage during two calls, including other desktop processes; not model-only allocation or a guaranteed instantaneous peak."
+}

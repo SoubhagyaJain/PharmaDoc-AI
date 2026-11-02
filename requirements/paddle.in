@@ -1,0 +1,4 @@
+# Native CPU environment, independent of the main uv project.
+paddleocr==3.3.2
+paddlepaddle==3.2.0
+numpy==1.26.4

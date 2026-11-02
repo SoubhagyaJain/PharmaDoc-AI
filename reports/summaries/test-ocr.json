@@ -1,0 +1,2138 @@
+{
+  "split": "test",
+  "seed": 42,
+  "pages": 30,
+  "render_dpi": 200,
+  "worker_startup_included": true,
+  "created_at_utc": "2026-11-02T12:24:11.560366+00:00",
+  "summary": [
+    {
+      "engine": "tesseract",
+      "profile": "raw",
+      "pages": 30,
+      "failures": 0,
+      "character_edits": 1050,
+      "reference_characters": 9768,
+      "word_edits": 209,
+      "reference_words": 1376,
+      "cer": 0.1074938574938575,
+      "wer": 0.15188953488372092,
+      "median_seconds": 1.4535000000032596,
+      "p95_seconds": 2.125,
+      "samples": 30
+    },
+    {
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "pages": 30,
+      "failures": 0,
+      "character_edits": 1233,
+      "reference_characters": 9768,
+      "word_edits": 342,
+      "reference_words": 1376,
+      "cer": 0.12622850122850124,
+      "wer": 0.24854651162790697,
+      "median_seconds": 1.2189999999973224,
+      "p95_seconds": 1.7345999999975894,
+      "samples": 30
+    },
+    {
+      "engine": "paddle",
+      "profile": "raw",
+      "pages": 30,
+      "failures": 0,
+      "character_edits": 36,
+      "reference_characters": 9768,
+      "word_edits": 34,
+      "reference_words": 1376,
+      "cer": 0.0036855036855036856,
+      "wer": 0.024709302325581394,
+      "median_seconds": 9.452999999994063,
+      "p95_seconds": 10.57759999999107,
+      "samples": 30
+    },
+    {
+      "engine": "paddle",
+      "profile": "adaptive",
+      "pages": 30,
+      "failures": 0,
+      "character_edits": 414,
+      "reference_characters": 9768,
+      "word_edits": 231,
+      "reference_words": 1376,
+      "cer": 0.04238329238329238,
+      "wer": 0.16787790697674418,
+      "median_seconds": 9.554500000012922,
+      "p95_seconds": 10.567149999999673,
+      "samples": 30
+    }
+  ],
+  "measurements": [
+    {
+      "document_id": "prescription-5-026",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.687999999994645,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 406,
+      "word_edits": 1,
+      "reference_words": 59
+    },
+    {
+      "document_id": "prescription-5-026",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.4679999999934807,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 406,
+      "word_edits": 1,
+      "reference_words": 59
+    },
+    {
+      "document_id": "prescription-5-026",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.640999999974156,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 406,
+      "word_edits": 1,
+      "reference_words": 59
+    },
+    {
+      "document_id": "prescription-5-026",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.327999999979511,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 406,
+      "word_edits": 1,
+      "reference_words": 59
+    },
+    {
+      "document_id": "prescription-5-000",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 2.1089999999967404,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 282,
+      "word_edits": 1,
+      "reference_words": 41
+    },
+    {
+      "document_id": "prescription-5-000",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.4839999999967404,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 12,
+      "reference_characters": 282,
+      "word_edits": 7,
+      "reference_words": 41
+    },
+    {
+      "document_id": "prescription-5-000",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.687000000005355,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 282,
+      "word_edits": 1,
+      "reference_words": 41
+    },
+    {
+      "document_id": "prescription-5-000",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.375,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 2,
+      "reference_characters": 282,
+      "word_edits": 2,
+      "reference_words": 41
+    },
+    {
+      "document_id": "prescription-5-011",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.6410000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 4,
+      "reference_characters": 417,
+      "word_edits": 4,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-011",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.3589999999967404,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 21,
+      "reference_characters": 417,
+      "word_edits": 13,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-011",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.953000000008615,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 2,
+      "reference_characters": 417,
+      "word_edits": 3,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-011",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.84299999999348,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 17,
+      "reference_characters": 417,
+      "word_edits": 14,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-007",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.8429999999934807,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 426,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-007",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.3440000000118744,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 426,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-007",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 11.28200000000652,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 0,
+      "reference_characters": 426,
+      "word_edits": 0,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-007",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.625,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 426,
+      "word_edits": 3,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.7340000000258442,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 204,
+      "reference_characters": 426,
+      "word_edits": 32,
+      "reference_words": 64
+    },
+    {
+      "document_id": "prescription-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.4530000000086147,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 190,
+      "reference_characters": 426,
+      "word_edits": 30,
+      "reference_words": 64
+    },
+    {
+      "document_id": "prescription-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 10.312999999994645,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 426,
+      "word_edits": 1,
+      "reference_words": 64
+    },
+    {
+      "document_id": "prescription-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.73399999999674,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 426,
+      "word_edits": 1,
+      "reference_words": 64
+    },
+    {
+      "document_id": "prescription-5-010",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 0.9379999999946449,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 45,
+      "reference_characters": 289,
+      "word_edits": 10,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-010",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 0.75,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 32,
+      "reference_characters": 289,
+      "word_edits": 13,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-010",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 8.98499999998603,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-010",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.125,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 62,
+      "reference_characters": 289,
+      "word_edits": 27,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-017",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.5,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 419,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-017",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.3280000000086147,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 419,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-017",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.5,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 419,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-017",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.937000000005355,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 419,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-022",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 2.125,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 291,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-022",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.5310000000172295,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 45,
+      "reference_characters": 291,
+      "word_edits": 14,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-022",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.64100000000326,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 291,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-022",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.171999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 4,
+      "reference_characters": 291,
+      "word_edits": 3,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-024",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.2810000000172295,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 2,
+      "reference_characters": 293,
+      "word_edits": 2,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-024",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.1090000000258442,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 21,
+      "reference_characters": 293,
+      "word_edits": 13,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-024",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.01500000001397,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-024",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.171999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 17,
+      "reference_characters": 293,
+      "word_edits": 12,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-004",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.75,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 427,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-004",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.875,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 2,
+      "reference_characters": 427,
+      "word_edits": 2,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-004",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 10.0,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 427,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-004",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.155999999988126,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 2,
+      "reference_characters": 427,
+      "word_edits": 2,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-023",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.4849999999860302,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 145,
+      "reference_characters": 294,
+      "word_edits": 22,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-023",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.375,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 130,
+      "reference_characters": 294,
+      "word_edits": 20,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-023",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.375,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 294,
+      "word_edits": 1,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-023",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.062000000005355,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 294,
+      "word_edits": 1,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-012",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 0.9370000000053551,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 17,
+      "reference_characters": 304,
+      "word_edits": 6,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-012",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 0.7660000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 41,
+      "reference_characters": 304,
+      "word_edits": 18,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-012",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.09399999998277,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 304,
+      "word_edits": 1,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-012",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 8.96899999998277,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 64,
+      "reference_characters": 304,
+      "word_edits": 30,
+      "reference_words": 44
+    },
+    {
+      "document_id": "prescription-5-008",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.297000000020489,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-008",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.0780000000086147,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-008",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 8.921000000002095,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-008",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.046999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-027",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 2.3280000000086147,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 423,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-027",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 2.0940000000118744,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 62,
+      "reference_characters": 423,
+      "word_edits": 24,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-027",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 10.71799999999348,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 423,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-027",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.547000000020489,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 423,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-019",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.235000000015134,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 4,
+      "reference_characters": 289,
+      "word_edits": 4,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-019",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.110000000015134,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 22,
+      "reference_characters": 289,
+      "word_edits": 14,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-019",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.172000000020489,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 289,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-019",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.094000000011874,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 16,
+      "reference_characters": 289,
+      "word_edits": 11,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-025",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.437999999994645,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 421,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-025",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.2189999999827705,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 421,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-025",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.405999999988126,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 421,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-025",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.609000000025844,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 2,
+      "reference_characters": 421,
+      "word_edits": 2,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-003",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.422000000020489,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 193,
+      "reference_characters": 413,
+      "word_edits": 30,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-003",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.2969999999913853,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 180,
+      "reference_characters": 413,
+      "word_edits": 28,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-003",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.280999999988126,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 413,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-003",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.702999999979511,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 413,
+      "word_edits": 1,
+      "reference_words": 62
+    },
+    {
+      "document_id": "prescription-5-028",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 0.9690000000118744,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 37,
+      "reference_characters": 294,
+      "word_edits": 7,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-028",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 0.75,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 36,
+      "reference_characters": 294,
+      "word_edits": 15,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-028",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.75,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 294,
+      "word_edits": 1,
+      "reference_words": 42
+    },
+    {
+      "document_id": "prescription-5-028",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.60899999999674,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 61,
+      "reference_characters": 294,
+      "word_edits": 28,
+      "reference_words": 42
+    },
+    {
+      "document_id": "clinical_form-5-006",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.4690000000118744,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 8,
+      "reference_characters": 268,
+      "word_edits": 3,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-006",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.2660000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 7,
+      "reference_characters": 268,
+      "word_edits": 3,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-006",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 10.405999999988126,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 268,
+      "word_edits": 1,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-006",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.546999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 268,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 2.1089999999967404,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 7,
+      "reference_characters": 269,
+      "word_edits": 3,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.5310000000172295,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 19,
+      "reference_characters": 269,
+      "word_edits": 10,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.26500000001397,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 269,
+      "word_edits": 1,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.625,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 4,
+      "reference_characters": 269,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-009",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.4219999999913853,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 9,
+      "reference_characters": 268,
+      "word_edits": 4,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-009",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.1099999999860302,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 24,
+      "reference_characters": 268,
+      "word_edits": 15,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-009",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.046999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 268,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-009",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.078000000008615,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 17,
+      "reference_characters": 268,
+      "word_edits": 14,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-000",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.3910000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 11,
+      "reference_characters": 268,
+      "word_edits": 4,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-000",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.139999999984866,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 13,
+      "reference_characters": 268,
+      "word_edits": 6,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-000",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.26600000000326,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 268,
+      "word_edits": 1,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-000",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.094000000011874,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 6,
+      "reference_characters": 268,
+      "word_edits": 5,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.4059999999881256,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 126,
+      "reference_characters": 268,
+      "word_edits": 21,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.1089999999967404,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 106,
+      "reference_characters": 268,
+      "word_edits": 20,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.655999999988126,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 268,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-002",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.562000000005355,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 268,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-005",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.0309999999881256,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 30,
+      "reference_characters": 266,
+      "word_edits": 10,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-005",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 0.8280000000086147,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 39,
+      "reference_characters": 266,
+      "word_edits": 16,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-005",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.077999999979511,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 266,
+      "word_edits": 2,
+      "reference_words": 36
+    },
+    {
+      "document_id": "clinical_form-5-005",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.01600000000326,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 52,
+      "reference_characters": 266,
+      "word_edits": 24,
+      "reference_words": 36
+    },
+    {
+      "document_id": "regulatory-5-003",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.3910000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-003",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.172000000020489,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-003",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 8.76500000001397,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-003",
+      "page_number": 1,
+      "degradation": "clean",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.21799999999348,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 2.125,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.562999999994645,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 17,
+      "reference_characters": 293,
+      "word_edits": 6,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.796999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-007",
+      "page_number": 1,
+      "degradation": "noisy",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 9.985000000015134,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 3,
+      "reference_characters": 293,
+      "word_edits": 2,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-000",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.389999999984866,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 17,
+      "reference_characters": 293,
+      "word_edits": 4,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-000",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.1560000000172295,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 21,
+      "reference_characters": 293,
+      "word_edits": 13,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-000",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 10.03100000001723,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-000",
+      "page_number": 1,
+      "degradation": "low_resolution",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.51600000000326,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 15,
+      "reference_characters": 293,
+      "word_edits": 12,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-006",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.4840000000258442,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-006",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.2190000000118744,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 3,
+      "reference_characters": 293,
+      "word_edits": 2,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-006",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.046999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-006",
+      "page_number": 1,
+      "degradation": "rotated",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.40700000000652,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 4,
+      "reference_characters": 293,
+      "word_edits": 4,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-001",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.547000000020489,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 150,
+      "reference_characters": 293,
+      "word_edits": 21,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-001",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 1.1410000000032596,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 158,
+      "reference_characters": 293,
+      "word_edits": 23,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-001",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.875,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-001",
+      "page_number": 1,
+      "degradation": "skewed",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.453000000008615,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-009",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "raw",
+      "duration_seconds": 1.062000000005355,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 29,
+      "reference_characters": 293,
+      "word_edits": 10,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-009",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "tesseract",
+      "profile": "adaptive",
+      "duration_seconds": 0.8120000000053551,
+      "error": null,
+      "versions": {
+        "tesseract_binary_version": "tesseract v5.5.0.20241111",
+        "ocr_language": "eng"
+      },
+      "character_edits": 26,
+      "reference_characters": 293,
+      "word_edits": 11,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-009",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "raw",
+      "duration_seconds": 9.312000000005355,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 1,
+      "reference_characters": 293,
+      "word_edits": 1,
+      "reference_words": 37
+    },
+    {
+      "document_id": "regulatory-5-009",
+      "page_number": 1,
+      "degradation": "blurry",
+      "engine": "paddle",
+      "profile": "adaptive",
+      "duration_seconds": 10.171999999991385,
+      "error": null,
+      "versions": {
+        "version_paddleocr": "3.3.2",
+        "version_paddlepaddle": "3.2.0"
+      },
+      "character_edits": 48,
+      "reference_characters": 293,
+      "word_edits": 21,
+      "reference_words": 37
+    }
+  ],
+  "configuration": {
+    "max_upload_bytes": 20971520,
+    "max_pages": 10,
+    "max_pixels": 25000000,
+    "render_dpi": 200,
+    "ocr_engine": "tesseract",
+    "extraction_method": "rules",
+    "preprocessing": "raw",
+    "force_ocr": false,
+    "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "ocr_timeout_seconds": 30.0,
+    "document_timeout_seconds": 180.0,
+    "minimum_ocr_score": 55.0,
+    "paddle_python": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\.venv-paddle\\Scripts\\python.exe",
+    "paddle_det_model": "PP-OCRv5_mobile_det",
+    "paddle_rec_model": "en_PP-OCRv5_mobile_rec",
+    "classifier_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\classifier.joblib",
+    "ner_path": "C:\\Users\\jains\\OneDrive\\Desktop\\PharmaDoc-AI\\artifacts\\ner",
+    "ollama_host": "http://127.0.0.1:11434",
+    "ollama_model": "qwen3.5:4b",
+    "llm_timeout_seconds": 30.0,
+    "llm_context_tokens": 4096,
+    "api_url": "http://127.0.0.1:8000"
+  },
+  "source_fingerprint": "f1f9acb11416561ecbffd27e016cde0932f6b37dd8474305f92aea96aeaeedf0",
+  "source_changed_during_run": false
+}
