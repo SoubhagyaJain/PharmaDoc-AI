@@ -125,6 +125,8 @@ def extract_llm(pages, category, settings, deadline):
                     )
     except EngineUnavailable:
         raise
+    except DocumentError:
+        raise
     except httpx.ConnectError as exc:
         raise EngineUnavailable("Ollama") from exc
     except httpx.HTTPStatusError as exc:
