@@ -2,7 +2,7 @@
 
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr, field_validator
 
 Category = Literal["prescription", "clinical_form", "regulatory", "unknown"]
 Box = tuple[float, float, float, float]
@@ -38,7 +38,7 @@ class Word(Model):
 
 
 class FieldResult(Model):
-    value: str | bool | None = Field(default=None, strict=True)
+    value: StrictStr | StrictBool | None = None
     method: Method = "rules"
     evidence: list[Evidence] = Field(default_factory=list)
     status: Literal["extracted", "missing", "ambiguous", "invalid"] = "missing"
@@ -82,7 +82,7 @@ class ValidationIssue(Model):
 
 
 class ReviewCorrection(Model):
-    value: str | bool | None = Field(strict=True)
+    value: StrictStr | StrictBool | None
     reason: str = Field(min_length=1)
 
 
