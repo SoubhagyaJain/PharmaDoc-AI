@@ -1,0 +1,330 @@
+{
+  "created_at_utc": "2026-11-02T11:51:21.364655+00:00",
+  "split": "validation",
+  "source": "scan",
+  "extraction_method": "rules",
+  "ocr_engine": "tesseract",
+  "preprocessing": "raw",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "document_ids": [
+    "regulatory-4-006",
+    "regulatory-4-009",
+    "clinical_form-4-009",
+    "prescription-4-019",
+    "clinical_form-4-005",
+    "prescription-4-012",
+    "regulatory-4-008",
+    "prescription-4-004",
+    "regulatory-4-007",
+    "clinical_form-4-002",
+    "clinical_form-4-003",
+    "clinical_form-4-008",
+    "regulatory-4-002",
+    "prescription-4-001",
+    "prescription-4-010",
+    "prescription-4-013",
+    "prescription-4-007",
+    "clinical_form-4-007",
+    "prescription-4-024",
+    "clinical_form-4-000",
+    "prescription-4-023",
+    "prescription-4-028",
+    "regulatory-4-005",
+    "regulatory-4-003",
+    "prescription-4-015",
+    "regulatory-4-004",
+    "prescription-4-021",
+    "prescription-4-029",
+    "clinical_form-4-006",
+    "prescription-4-000",
+    "prescription-4-005",
+    "prescription-4-016",
+    "prescription-4-006",
+    "clinical_form-4-001",
+    "prescription-4-027",
+    "prescription-4-018",
+    "clinical_form-4-004",
+    "prescription-4-003",
+    "prescription-4-025",
+    "regulatory-4-001",
+    "prescription-4-011",
+    "regulatory-4-000",
+    "prescription-4-022",
+    "prescription-4-009",
+    "prescription-4-020",
+    "prescription-4-017",
+    "prescription-4-002",
+    "prescription-4-014",
+    "prescription-4-008",
+    "prescription-4-026"
+  ],
+  "documents": 50,
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "prescription",
+      "clinical_form",
+      "regulatory",
+      "unknown"
+    ],
+    "confusion_matrix": [
+      [
+        30,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "unknown_rate": 0.0
+  },
+  "entities": {
+    "precision": 0.9979123173277662,
+    "recall": 1.0,
+    "f1": 0.9989550679205852,
+    "tp": 478,
+    "fp": 1,
+    "fn": 0
+  },
+  "fields": {
+    "exact_match_accuracy_present": 1.0,
+    "present_fields": 478,
+    "correct_fields": 478,
+    "absent_fields": 4,
+    "false_fills": 0,
+    "false_fill_rate": 0.0,
+    "per_field": {
+      "title": {
+        "total": 10,
+        "correct": 10
+      },
+      "document_id": {
+        "total": 10,
+        "correct": 10
+      },
+      "revision_date": {
+        "total": 10,
+        "correct": 10
+      },
+      "section_1": {
+        "total": 10,
+        "correct": 10
+      },
+      "section_2": {
+        "total": 10,
+        "correct": 10
+      },
+      "patient_name": {
+        "total": 40,
+        "correct": 40
+      },
+      "document_date": {
+        "total": 40,
+        "correct": 40
+      },
+      "form_id": {
+        "total": 10,
+        "correct": 10
+      },
+      "checkbox_consent_provided": {
+        "total": 10,
+        "correct": 10
+      },
+      "checkbox_insurance_available": {
+        "total": 10,
+        "correct": 10
+      },
+      "checkbox_follow-up_requested": {
+        "total": 9,
+        "correct": 9
+      },
+      "prescriber_name": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.name": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.strength": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.administered_dose": {
+        "total": 27,
+        "correct": 27
+      },
+      "medications.0.instructions": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.0.frequency": {
+        "total": 30,
+        "correct": 30
+      },
+      "medications.1.name": {
+        "total": 18,
+        "correct": 18
+      },
+      "medications.1.strength": {
+        "total": 18,
+        "correct": 18
+      },
+      "medications.1.administered_dose": {
+        "total": 18,
+        "correct": 18
+      },
+      "medications.1.instructions": {
+        "total": 18,
+        "correct": 18
+      },
+      "medications.1.frequency": {
+        "total": 18,
+        "correct": 18
+      },
+      "medications.2.name": {
+        "total": 8,
+        "correct": 8
+      },
+      "medications.2.strength": {
+        "total": 8,
+        "correct": 8
+      },
+      "medications.2.administered_dose": {
+        "total": 8,
+        "correct": 8
+      },
+      "medications.2.instructions": {
+        "total": 8,
+        "correct": 8
+      },
+      "medications.2.frequency": {
+        "total": 8,
+        "correct": 8
+      },
+      "section_3": {
+        "total": 2,
+        "correct": 2
+      }
+    }
+  },
+  "checkboxes": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1": 0.923076923076923,
+    "tp": 30,
+    "fp": 5,
+    "fn": 0,
+    "state_accuracy_all_ground_truth": 1.0,
+    "ground_truth_boxes": 30
+  },
+  "unsupported_fields": {
+    "rejected_candidates": 0,
+    "candidates": 479,
+    "rejected_candidate_rate": 0.0,
+    "emitted_unsupported_rate": 0.0,
+    "limitation": "Evidence checks do not detect every semantic role error; ground-truth precision and false fills remain necessary."
+  },
+  "human_review_rate": 0.12,
+  "failed_documents": 0,
+  "errors": {},
+  "review_reasons": {
+    "ambiguous_field": 3,
+    "ambiguous_frequency": 2,
+    "missing_required_fields": 3,
+    "ambiguous_checkbox": 2
+  },
+  "latency": {
+    "median_seconds": 3.6634999999951106,
+    "p95_seconds": 7.126650000002701,
+    "samples": 50
+  },
+  "failure_examples": [
+    {
+      "document_id": "prescription-4-001",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_field",
+        "ambiguous_frequency"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-013",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    },
+    {
+      "document_id": "clinical_form-4-000",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_checkbox",
+        "ambiguous_field"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-000",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    },
+    {
+      "document_id": "prescription-4-018",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_checkbox",
+        "ambiguous_field",
+        "ambiguous_frequency"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-026",
+      "status": "complete",
+      "review_reasons": [
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    }
+  ],
+  "ocr": {
+    "character_edits": 105,
+    "reference_characters": 16733,
+    "word_edits": 78,
+    "reference_words": 2345,
+    "cer": 0.0062750253989123286,
+    "wer": 0.03326226012793177
+  },
+  "publication_note": "Exploratory development run, not a frozen-source performance estimate. OCR development included a reading-order fix; use the final test rows for the released implementation."
+}

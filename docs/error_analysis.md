@@ -20,6 +20,8 @@ This report combines regression failures found during implementation with measur
 
 The corpus contains a small vocabulary, consistent metadata labels, and only six layout families per category. Excellent synthetic scores are evidence of correctness on these cases, not a claim about real clinical documents. Handwriting, complex tables, stamps over text, arbitrary language, medication terminology normalization, and treatment safety are outside the validated scope.
 
+A syntactically usable native PDF text layer can still disagree with its rendered image. The routing heuristic does not prove semantic agreement, and overlap suppression can favor the native layer. Complex text-layer disagreement needs an additional comparison/review mechanism before real-world use.
+
 The resource limit checks do not replace a hardened parser sandbox. The demo is localhost-only. Native rendering has pixel bounds and stage deadline checks but is not killed by a separate hard-timeout worker.
 
 Field corrections do not acknowledge every page-level uncertainty. Reviewed exports can still require human review when a page failed or contained weak OCR. A future workflow should explicitly track page-level review acknowledgement before claiming review completion.

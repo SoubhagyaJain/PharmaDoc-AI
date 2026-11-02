@@ -1,0 +1,286 @@
+{
+  "created_at_utc": "2026-11-02T11:55:41.508537+00:00",
+  "split": "validation",
+  "source": "gold",
+  "extraction_method": "llm",
+  "ocr_engine": "tesseract",
+  "preprocessing": "raw",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "document_ids": [
+    "prescription-4-019",
+    "prescription-4-012",
+    "prescription-4-004",
+    "prescription-4-001",
+    "prescription-4-010",
+    "prescription-4-013",
+    "prescription-4-007",
+    "prescription-4-024",
+    "prescription-4-023",
+    "prescription-4-028",
+    "prescription-4-015",
+    "prescription-4-021",
+    "prescription-4-029",
+    "prescription-4-000",
+    "prescription-4-005",
+    "prescription-4-016",
+    "prescription-4-006",
+    "prescription-4-027",
+    "prescription-4-018",
+    "prescription-4-003",
+    "prescription-4-025",
+    "prescription-4-011",
+    "prescription-4-022",
+    "prescription-4-009",
+    "prescription-4-020",
+    "prescription-4-017",
+    "prescription-4-002",
+    "prescription-4-014",
+    "prescription-4-008",
+    "prescription-4-026"
+  ],
+  "documents": 30,
+  "classification": {
+    "accuracy": 0.8,
+    "macro_f1": 0.2962962962962963,
+    "labels": [
+      "prescription",
+      "clinical_form",
+      "regulatory",
+      "unknown"
+    ],
+    "confusion_matrix": [
+      [
+        24,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "unknown_rate": 0.2
+  },
+  "entities": {
+    "precision": 0.9844961240310077,
+    "recall": 0.6920980926430518,
+    "f1": 0.8128,
+    "tp": 254,
+    "fp": 4,
+    "fn": 113
+  },
+  "fields": {
+    "exact_match_accuracy_present": 0.6920980926430518,
+    "present_fields": 367,
+    "correct_fields": 254,
+    "absent_fields": 3,
+    "false_fills": 0,
+    "false_fill_rate": 0.0,
+    "per_field": {
+      "patient_name": {
+        "total": 30,
+        "correct": 24
+      },
+      "document_date": {
+        "total": 30,
+        "correct": 24
+      },
+      "prescriber_name": {
+        "total": 30,
+        "correct": 24
+      },
+      "medications.0.name": {
+        "total": 30,
+        "correct": 24
+      },
+      "medications.0.strength": {
+        "total": 30,
+        "correct": 24
+      },
+      "medications.0.administered_dose": {
+        "total": 27,
+        "correct": 22
+      },
+      "medications.0.instructions": {
+        "total": 30,
+        "correct": 22
+      },
+      "medications.0.frequency": {
+        "total": 30,
+        "correct": 24
+      },
+      "medications.1.name": {
+        "total": 18,
+        "correct": 12
+      },
+      "medications.1.strength": {
+        "total": 18,
+        "correct": 12
+      },
+      "medications.1.administered_dose": {
+        "total": 18,
+        "correct": 11
+      },
+      "medications.1.instructions": {
+        "total": 18,
+        "correct": 11
+      },
+      "medications.1.frequency": {
+        "total": 18,
+        "correct": 12
+      },
+      "medications.2.name": {
+        "total": 8,
+        "correct": 2
+      },
+      "medications.2.strength": {
+        "total": 8,
+        "correct": 2
+      },
+      "medications.2.administered_dose": {
+        "total": 8,
+        "correct": 1
+      },
+      "medications.2.instructions": {
+        "total": 8,
+        "correct": 1
+      },
+      "medications.2.frequency": {
+        "total": 8,
+        "correct": 2
+      }
+    }
+  },
+  "checkboxes": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "state_accuracy_all_ground_truth": 0.0,
+    "ground_truth_boxes": 0
+  },
+  "unsupported_fields": {
+    "rejected_candidates": 0,
+    "candidates": 258,
+    "rejected_candidate_rate": 0.0,
+    "emitted_unsupported_rate": 0.0,
+    "limitation": "Evidence checks do not detect every semantic role error; ground-truth precision and false fills remain necessary."
+  },
+  "human_review_rate": 0.3,
+  "failed_documents": 6,
+  "errors": {
+    "llm_timeout": 6
+  },
+  "review_reasons": {
+    "llm_timeout": 6,
+    "ambiguous_frequency": 1,
+    "instruction_conflict": 2,
+    "missing_required_fields": 2
+  },
+  "latency": {
+    "median_seconds": 22.484500000005937,
+    "p95_seconds": 30.74325000000681,
+    "samples": 30
+  },
+  "failure_examples": [
+    {
+      "document_id": "prescription-4-019",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-001",
+      "status": "complete",
+      "review_reasons": [
+        "ambiguous_frequency"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-013",
+      "status": "complete",
+      "review_reasons": [
+        "instruction_conflict",
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose"
+      ]
+    },
+    {
+      "document_id": "prescription-4-028",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-029",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-000",
+      "status": "complete",
+      "review_reasons": [
+        "instruction_conflict",
+        "missing_required_fields"
+      ],
+      "missing_fields": [
+        "medications.0.administered_dose",
+        "medications.1.administered_dose",
+        "medications.2.administered_dose"
+      ]
+    },
+    {
+      "document_id": "prescription-4-016",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-018",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    },
+    {
+      "document_id": "prescription-4-026",
+      "status": "failed",
+      "review_reasons": [
+        "llm_timeout"
+      ],
+      "missing_fields": []
+    }
+  ],
+  "publication_note": "Exploratory development run, not a frozen-source performance estimate. OCR development included a reading-order fix; use the final test rows for the released implementation."
+}

@@ -17,6 +17,10 @@ The project is an engineering and learning demonstration. It does not assess tre
 
 See [architecture](docs/architecture.md), [evaluation methodology](docs/evaluation.md), [measured results](docs/results.md), [failure analysis](docs/error_analysis.md), and the [30-day learning roadmap](docs/roadmap.md).
 
+![Local reviewer with a scanned prescription and preserved human correction](docs/screenshots/reviewer.png)
+
+Start learning with the [Day 1 exercise](docs/day_01.md) and [engineering explanations](docs/engineering_notes.md).
+
 ## Windows setup
 
 Use Python **3.11** and [uv](https://docs.astral.sh/uv/). From the repository root:
@@ -110,5 +114,7 @@ uv run --locked pytest -m integration -q
 ```
 
 Core CI runs on Windows and Linux without downloading OCR/model weights. Local integration tests clearly skip when their external prerequisites are absent. The local validation record in [results](docs/results.md) distinguishes executed checks from optional or unexecuted paths.
+
+The [executed verification record](docs/verification.md) includes 70 passing tests, fresh-install and browser checks, and the frozen held-out run.
 
 RAG, LangChain, transformer fine-tuning, handwriting, multilingual documents, complex table extraction, cloud deployment, and enterprise compliance are deferred. Evaluation and failure analysis take priority over adding them.

@@ -1,0 +1,12 @@
+{
+  "verified_on": "2026-11-02",
+  "tests": {"command": "uv run --locked pytest -q", "passed": 70, "failed": 0, "skipped": 0, "warnings": 1, "warning_note": "Upstream Starlette TestClient deprecation warning about its legacy httpx compatibility path."},
+  "lint": {"command": "uv run --locked ruff check src tests scripts", "passed": true},
+  "format": {"command": "uv run --locked ruff format --check src tests scripts", "passed": true},
+  "clean_install": {"command": "uv sync --locked --no-dev with a fresh UV_PROJECT_ENVIRONMENT", "application_packages_installed": 87, "digital_prescription_processed": true},
+  "dependency_checks": {"main_packages_checked": 94, "paddle_packages_checked": 64, "compatible": true},
+  "browser": {"command": "uv run --locked python scripts/verify_ui.py", "passed": true, "flow": "Scanned upload -> FastAPI -> real Tesseract -> evidence -> correction -> original/reviewed JSON download; original values and duration preserved"},
+  "held_out": {"unique_logical_test_documents": 50, "ocr_engine_profile_measurements": 120, "ocr_measurement_failures": 0, "document_evaluations_across_methods_and_sources": 230, "document_processing_failures": 0, "source_unchanged": true},
+  "not_executed": ["Remote GitHub Actions", "Label Studio GUI", "LangChain", "RAG"],
+  "scope": "Synthetic printed English documents only; no real-world clinical accuracy or compliance claim."
+}

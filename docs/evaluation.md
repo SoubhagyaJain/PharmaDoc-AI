@@ -22,12 +22,18 @@ When a benchmark exposes a reproducibility or implementation bug, fix it with a 
 
 - **CER/WER:** Unicode NFKC, casefold, collapse whitespace, retain punctuation and numerical values. Sum edit counts across pages and divide by total reference characters/words. Empty reference plus nonempty prediction is undefined (`null`), with insertions retained in counts. Errors can exceed 1.
 - **Classification:** accuracy, macro F1 over the three intended categories, confusion matrix including `unknown`, and rejection rate. Rejections count against recall.
+
+Use the all-category digital run to assess three-class classification. Prescription-only extraction subsets do not estimate performance on the two absent classes; the compact published comparison leaves their classification macro F1 unset.
 - **Entity precision/recall/F1:** exact type/value matching after normalization, using multisets to prevent duplicate matching. Medication order is ignored for entity matching.
 - **Field exact match:** compare each present ground-truth field at its field path, including medication position. Report missing-field false fills separately. Do not inflate accuracy by counting many absent keys as correct.
 - **Checkbox detection:** greedy one-to-one matching within a page at IoU >= 0.5; report precision, recall, F1. State accuracy uses all ground-truth boxes as its denominator, so missed boxes do not disappear from the metric.
 - **Unsupported candidates:** rejected non-null candidates / all non-null candidates. Also report emitted values lacking evidence and false fills of absent labels. A quote can be real but assigned to the wrong role; extraction precision still matters.
 - **Review rate:** fraction of all selected documents requiring review, including failures. A low review rate alone is not success.
+
+Ground truth preserves literal ambiguous abbreviations such as `OD`; it does not assign an interpreted dosing meaning. Copying the abbreviation with a review flag can match the raw label, while returning null is a safe abstention that reduces measured recall. Evaluate that policy behavior alongside raw exact match rather than calling every abstention an unsafe error.
 - **Latency:** end-to-end median/p95, sample count, explicit failures, and OCR worker startup. LLM output includes model digest and load/generation timing diagnostics.
+
+The extraction runner's reported wall time includes constructing a synthetic scan derivative for `source=scan`. Per-document `processing_duration_seconds` records the core pipeline alone. Gold/digital evaluation has no scan-generation step. The separate OCR benchmark times recognition after image preparation and includes worker startup. Keep these timing definitions distinct when comparing results.
 
 Gold-text extraction isolates the extractor. Digital-PDF evaluation adds decoding/routing/OMR. Scanned evaluation adds rendering, OCR, and its errors. Compare prescription methods on the identical fixed prescription IDs. Clinical/regulatory extraction remains rules-based across method selections and is disclosed through field methods.
 

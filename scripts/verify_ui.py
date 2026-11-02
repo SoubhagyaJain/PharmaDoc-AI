@@ -19,7 +19,7 @@ def main():
     screenshots.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(viewport={"width": 1600, "height": 1100}, accept_downloads=True)
+        page = browser.new_page(viewport={"width": 1600, "height": 1500}, accept_downloads=True)
         exceptions = []
         page.on("pageerror", lambda error: exceptions.append(str(error)))
         page.goto(args.url)
@@ -64,9 +64,18 @@ def main():
         assert reviewed["fields"] == original["fields"]
         assert reviewed["processing_duration_seconds"] == original["processing_duration_seconds"]
         page.get_by_role("tab", name="OCR & evidence", exact=True).click()
+        expect(page.get_by_role("tab", name="OCR & evidence", exact=True)).to_have_attribute(
+            "aria-selected", "true"
+        )
         expect(page.get_by_text("Page 1 · ocr", exact=True)).to_be_visible()
+        page.get_by_role("heading", name="PharmaDoc AI", exact=True).scroll_into_view_if_needed()
         page.screenshot(path=str(screenshots / "ocr-evidence.png"), full_page=True)
         page.get_by_role("tab", name="Fields & review", exact=True).click()
+        expect(page.get_by_role("tab", name="Fields & review", exact=True)).to_have_attribute(
+            "aria-selected", "true"
+        )
+        expect(page.get_by_role("combobox", name="Field to review", exact=True)).to_be_visible()
+        page.get_by_role("heading", name="PharmaDoc AI", exact=True).scroll_into_view_if_needed()
         page.screenshot(path=str(screenshots / "reviewer.png"), full_page=True)
         assert not page.get_by_test_id("stException").count(), page.locator("body").inner_text()
         assert not exceptions, exceptions
