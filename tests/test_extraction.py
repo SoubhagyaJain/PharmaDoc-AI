@@ -78,3 +78,22 @@ def test_review_preserves_original_and_validates_date():
     assert reviewed["fields"]["document_date"]["value"] == "2025-01-02"
     assert reviewed["reviewed_fields"]["document_date"]["value"] == "invalid"
     assert reviewed["review_validation_errors"][0]["code"] == "invalid_date"
+
+
+def test_explicitly_uncertain_medication_name_is_not_corrected():
+    pages = [
+        page("Medication: Amoxi?illin | Strength: 500 mg\nDirections: Take 1 capsule twice daily.")
+    ]
+    fields, meds = extract_rules(pages, "prescription")
+    result = validate_result(
+        DocumentResult(
+            document_id="synthetic",
+            document_category="prescription",
+            pages=pages,
+            fields=fields,
+            medications=meds,
+        )
+    )
+    assert meds[0].name.value == "Amoxi?illin"
+    assert meds[0].name.status == "ambiguous"
+    assert "ambiguous_medication_name" in result.review_reasons

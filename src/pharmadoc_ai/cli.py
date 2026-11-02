@@ -186,7 +186,8 @@ def main():
                 print(result.model_dump_json(indent=2))
         elif args.command == "train":
             records = json.loads(args.manifest.read_text(encoding="utf-8"))["records"]
-            report = {}
+            output = ROOT / "artifacts/training.json"
+            report = json.loads(output.read_text(encoding="utf-8")) if output.is_file() else {}
             if args.model in ("classifier", "all"):
                 from pharmadoc_ai.classification import train_classifier
 
@@ -196,7 +197,6 @@ def main():
                 from pharmadoc_ai.extraction.ner import train_ner
 
                 report["ner"] = train_ner(records, settings.ner_path, args.epochs)
-            output = ROOT / "artifacts/training.json"
             output.parent.mkdir(parents=True, exist_ok=True)
             output.write_text(json.dumps(report, indent=2), encoding="utf-8")
             _json(report)

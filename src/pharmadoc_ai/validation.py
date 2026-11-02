@@ -88,6 +88,57 @@ def validate_result(result: DocumentResult) -> DocumentResult:
                 )
             else:
                 field.evidence = valid
+                scored = []
+                for evidence in valid:
+                    page = next(p for p in result.pages if p.page_number == evidence.page_number)
+                    for word in page.words:
+                        if word.score is None or not evidence.bbox:
+                            continue
+                        cx, cy = (
+                            (word.bbox[0] + word.bbox[2]) / 2,
+                            (word.bbox[1] + word.bbox[3]) / 2,
+                        )
+                        if (
+                            evidence.bbox[0] <= cx <= evidence.bbox[2]
+                            and evidence.bbox[1] <= cy <= evidence.bbox[3]
+                            and (word.text in str(field.value) or str(field.value) in word.text)
+                        ):
+                            scored.append(word)
+                if scored:
+                    weakest = min(
+                        scored,
+                        key=lambda word: (
+                            word.score * (100 if "paddle" in (word.score_source or "") else 1)
+                        ),
+                    )
+                    field.raw_score, field.score_source = weakest.score, weakest.score_source
+                    comparable = weakest.score * (
+                        100 if "paddle" in (weakest.score_source or "") else 1
+                    )
+                    configured_threshold = result.metadata.get("minimum_ocr_score", 55)
+                    threshold = (
+                        configured_threshold
+                        if isinstance(configured_threshold, (int, float))
+                        else 55
+                    )
+                    if comparable < threshold:
+                        field.status = "ambiguous"
+                        issue(
+                            path,
+                            "low_field_ocr_score",
+                            "A matching source span has a weak uncalibrated OCR score.",
+                        )
+        if (
+            key == "name"
+            and field.value
+            and re.search(r"\?|\b(?:illegible|unclear|unknown)\b", str(field.value), re.I)
+        ):
+            field.status = "ambiguous"
+            issue(
+                path,
+                "ambiguous_medication_name",
+                "The source medication name is explicitly uncertain and was not corrected.",
+            )
         if field.value is not None and key in {"document_date", "revision_date"}:
             try:
                 date.fromisoformat(str(field.value))

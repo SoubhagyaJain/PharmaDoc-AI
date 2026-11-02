@@ -12,7 +12,7 @@ from pathlib import Path
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 
 from pharmadoc_ai.classification import classify
-from pharmadoc_ai.config import Settings
+from pharmadoc_ai.config import ROOT, Settings
 from pharmadoc_ai.data.synthetic import CATEGORIES, create_scan
 from pharmadoc_ai.errors import DocumentError
 from pharmadoc_ai.evaluation.metrics import (
@@ -30,6 +30,14 @@ from pharmadoc_ai.ingestion import open_document, render_page
 from pharmadoc_ai.pipeline import process_document
 from pharmadoc_ai.schemas import DocumentResult, PageResult
 from pharmadoc_ai.validation import all_fields, validate_result
+
+
+def source_fingerprint() -> str:
+    digest = hashlib.sha256()
+    for path in sorted((ROOT / "src").rglob("*.py")):
+        digest.update(path.relative_to(ROOT).as_posix().encode())
+        digest.update(path.read_bytes())
+    return digest.hexdigest()
 
 
 def select_records(records, split, allow_test=False, prescriptions_only=False, limit=0):
@@ -114,6 +122,7 @@ def evaluate(
     prescriptions_only=False,
     allow_test=False,
 ):
+    fingerprint = source_fingerprint()
     records = select_records(
         json.loads(manifest.read_text(encoding="utf-8"))["records"],
         split,
@@ -287,6 +296,9 @@ def evaluate(
     }
     if ocr_counts:
         report["ocr"] = text_rates(ocr_counts)
+    report["configuration"] = settings.model_dump(mode="json")
+    report["source_fingerprint"] = fingerprint
+    report["source_changed_during_run"] = fingerprint != source_fingerprint()
     (output / "summary.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     return report
 
@@ -302,6 +314,7 @@ def benchmark_ocr(
     allow_test=False,
 ):
     """Paired first-page scans; deterministic stratified selection and degradation."""
+    fingerprint = source_fingerprint()
     import pymupdf
 
     from pharmadoc_ai.ingestion import words_to_text
@@ -359,6 +372,7 @@ def benchmark_ocr(
                             "profile": profile,
                             "duration_seconds": time.monotonic() - started,
                             "error": error,
+                            "versions": getattr(engine, "metadata", {}),
                             **text_counts(record["pages"][0]["text"], text),
                         }
                     )
@@ -402,5 +416,8 @@ def benchmark_ocr(
         "summary": summaries,
         "measurements": measurements,
     }
+    report["configuration"] = settings.model_dump(mode="json")
+    report["source_fingerprint"] = fingerprint
+    report["source_changed_during_run"] = fingerprint != source_fingerprint()
     (output / "summary.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     return report

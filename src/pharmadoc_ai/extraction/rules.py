@@ -93,7 +93,9 @@ def extract_medications(pages: list[PageResult], method="rules") -> list[Medicat
     return medications
 
 
-def extract_rules(pages: list[PageResult], category: str):
+def extract_rules(
+    pages: list[PageResult], category: str
+) -> tuple[dict[str, FieldResult], list[MedicationResult]]:
     text = "\n".join(page.text for page in pages)
     fields = {}
     if category in ("prescription", "clinical_form"):

@@ -55,6 +55,7 @@ def process_document(path: Path, settings: Settings | None = None) -> DocumentRe
         "render_dpi": settings.render_dpi,
         "force_ocr": settings.force_ocr,
         "scores_are_calibrated": False,
+        "minimum_ocr_score": settings.minimum_ocr_score,
     }
     for package in ("pymupdf", "pytesseract", "scikit-learn", "spacy"):
         result.metadata[f"version_{package}"] = importlib.metadata.version(package)
