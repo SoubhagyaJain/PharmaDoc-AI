@@ -1,0 +1,484 @@
+{
+  "document_id": "regulatory-0-002",
+  "category": "regulatory",
+  "split": "train",
+  "template_family": "regulatory-layout-0",
+  "patient_record_id": null,
+  "lineage_id": "regulatory-0-002",
+  "path": "regulatory-0-002.pdf",
+  "fields": {
+    "title": "Fictional Pharmaceutical Quality Record",
+    "document_id": "REG-0002-0",
+    "revision_date": "2025-03-23"
+  },
+  "medications": [],
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "SYNTHETIC - NOT FOR CLINICAL USE\nFictional Pharmaceutical Quality Record\nDocument ID: REG-0002-0\nRevision date: 2025-03-23\nSection: Scope\nFictional packaging review for demonstration only.\nSection: Records\nSample batch records use invented identifiers.\nPharmaDoc AI fictional training document",
+      "words": [
+        {
+          "text": "SYNTHETIC",
+          "bbox": [
+            0.058823529411764705,
+            0.02176365886334852,
+            0.14454285437319458,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "-",
+          "bbox": [
+            0.1487478945435596,
+            0.02176365886334852,
+            0.15378487210313813,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "NOT",
+          "bbox": [
+            0.15798991227350315,
+            0.02176365886334852,
+            0.1899210056336988,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "FOR",
+          "bbox": [
+            0.1941260458040638,
+            0.02176365886334852,
+            0.22605713916425946,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "CLINICAL",
+          "bbox": [
+            0.23026217933462448,
+            0.02176365886334852,
+            0.2983445367893251,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "USE",
+          "bbox": [
+            0.30254957695969015,
+            0.02176365886334852,
+            0.3336487585756959,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Fictional",
+          "bbox": [
+            0.07563025210084033,
+            0.06380641148945498,
+            0.18200170693277312,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Pharmaceutical",
+          "bbox": [
+            0.18994456058790704,
+            0.06380641148945498,
+            0.386830228917739,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Quality",
+          "bbox": [
+            0.3947730825728729,
+            0.06380641148945498,
+            0.48368735433626575,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Record",
+          "bbox": [
+            0.49163023363642333,
+            0.06380641148945498,
+            0.5837159228925946,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Document",
+          "bbox": [
+            0.07563025210084033,
+            0.15816508675980737,
+            0.15987729625541622,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "ID:",
+          "bbox": [
+            0.16501678979697348,
+            0.15816508675980737,
+            0.1886436782965139,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "REG-0002-0",
+          "bbox": [
+            0.19378317183807117,
+            0.15816508675980737,
+            0.29755287490972954,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Revision",
+          "bbox": [
+            0.07563025210084033,
+            0.18548100124911854,
+            0.14651091759946167,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "date:",
+          "bbox": [
+            0.1516504111410189,
+            0.18548100124911854,
+            0.1927663594734769,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "2025-03-23",
+          "bbox": [
+            0.19790585301503413,
+            0.18548100124911854,
+            0.2924503358472295,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Section:",
+          "bbox": [
+            0.07563025210084033,
+            0.2127969157384297,
+            0.14242520372406775,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Scope",
+          "bbox": [
+            0.147564697265625,
+            0.2127969157384297,
+            0.19997644504579176,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Fictional",
+          "bbox": [
+            0.07563025210084033,
+            0.24011283022774088,
+            0.14445881563074447,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "packaging",
+          "bbox": [
+            0.14959830917230174,
+            0.24011283022774088,
+            0.23386384338891808,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "review",
+          "bbox": [
+            0.23900333693047532,
+            0.24011283022774088,
+            0.2924134070131959,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "for",
+          "bbox": [
+            0.29755290055475314,
+            0.24011283022774088,
+            0.3191276742630646,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "demonstration",
+          "bbox": [
+            0.32426716780462184,
+            0.24011283022774088,
+            0.4414032751772584,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "only.",
+          "bbox": [
+            0.4465427943638393,
+            0.24011283022774088,
+            0.48558816348805145,
+            0.25806294710789046
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Section:",
+          "bbox": [
+            0.07563025210084033,
+            0.267428744717052,
+            0.14242520372406775,
+            0.2853788615972016
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Records",
+          "bbox": [
+            0.147564697265625,
+            0.267428744717052,
+            0.21639327361804098,
+            0.2853788615972016
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Sample",
+          "bbox": [
+            0.07563025210084033,
+            0.2947446592063632,
+            0.1383025225471048,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "batch",
+          "bbox": [
+            0.14344201608866203,
+            0.2947446592063632,
+            0.18866216835855437,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "records",
+          "bbox": [
+            0.1938016619001116,
+            0.2947446592063632,
+            0.25543861709722954,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "use",
+          "bbox": [
+            0.2605781106387868,
+            0.2947446592063632,
+            0.29037978228400735,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "invented",
+          "bbox": [
+            0.2955192758255646,
+            0.2947446592063632,
+            0.36540160619912027,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "identifiers.",
+          "bbox": [
+            0.3705410997406775,
+            0.2947446592063632,
+            0.45478818236278884,
+            0.31269477608651275
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "PharmaDoc",
+          "bbox": [
+            0.058823529411764705,
+            0.9636579862399792,
+            0.1298016844677324,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "AI",
+          "bbox": [
+            0.1335394979525013,
+            0.9636579862399792,
+            0.1462453762022387,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "fictional",
+          "bbox": [
+            0.1499831896870076,
+            0.9636579862399792,
+            0.19556301341337315,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "training",
+          "bbox": [
+            0.19930082689814207,
+            0.9636579862399792,
+            0.24338820000656514,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "document",
+          "bbox": [
+            0.24712601349133403,
+            0.9636579862399792,
+            0.3061646533613445,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        }
+      ]
+    }
+  ],
+  "entities": [],
+  "evidence": {
+    "title": {
+      "page_number": 1,
+      "text": "Fictional Pharmaceutical Quality Record"
+    },
+    "document_id": {
+      "page_number": 1,
+      "text": "REG-0002-0"
+    },
+    "revision_date": {
+      "page_number": 1,
+      "text": "2025-03-23"
+    }
+  },
+  "checkboxes": [],
+  "sha256": "a97c43c23abed8067f1333c6e381afe32ffe6d7c2818c5576135c56cddffa739"
+}

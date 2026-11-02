@@ -1,0 +1,522 @@
+{
+  "document_id": "clinical_form-0-002",
+  "category": "clinical_form",
+  "split": "train",
+  "template_family": "clinical_form-layout-0",
+  "patient_record_id": "train-Riya Suri",
+  "lineage_id": "clinical_form-0-002",
+  "path": "clinical_form-0-002.pdf",
+  "fields": {
+    "patient_name": "Riya Suri",
+    "document_date": "2025-01-11",
+    "form_id": "FORM-0002-0"
+  },
+  "medications": [],
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "SYNTHETIC - NOT FOR CLINICAL USE\nClinical Intake and Insurance Form\nPatient name: Riya Suri\nDocument date: 2025-01-11\nForm ID: FORM-0002-0\nConsent and coverage selections\nConsent provided\nInsurance available\nFollow-up requested\nPharmaDoc AI fictional training document",
+      "words": [
+        {
+          "text": "SYNTHETIC",
+          "bbox": [
+            0.058823529411764705,
+            0.02176365886334852,
+            0.14454285437319458,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "-",
+          "bbox": [
+            0.1487478945435596,
+            0.02176365886334852,
+            0.15378487210313813,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "NOT",
+          "bbox": [
+            0.15798991227350315,
+            0.02176365886334852,
+            0.1899210056336988,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "FOR",
+          "bbox": [
+            0.1941260458040638,
+            0.02176365886334852,
+            0.22605713916425946,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "CLINICAL",
+          "bbox": [
+            0.23026217933462448,
+            0.02176365886334852,
+            0.2983445367893251,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "USE",
+          "bbox": [
+            0.30254957695969015,
+            0.02176365886334852,
+            0.3336487585756959,
+            0.03645011874672353
+          ],
+          "line": 0,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Clinical",
+          "bbox": [
+            0.07563025210084033,
+            0.06380641148945498,
+            0.16768742409073004,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Intake",
+          "bbox": [
+            0.17563027774586398,
+            0.06380641148945498,
+            0.25345884691767334,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "and",
+          "bbox": [
+            0.26140170057280726,
+            0.06380641148945498,
+            0.30905882250361083,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Insurance",
+          "bbox": [
+            0.31700167615874475,
+            0.06380641148945498,
+            0.44245877306000525,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Form",
+          "bbox": [
+            0.45040165236016283,
+            0.06380641148945498,
+            0.5170588132714024,
+            0.09154750615570721
+          ],
+          "line": 1000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Patient",
+          "bbox": [
+            0.07563025210084033,
+            0.15816508675980737,
+            0.13318150624507616,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "name:",
+          "bbox": [
+            0.1383209997866334,
+            0.15816508675980737,
+            0.18969745796267726,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Riya",
+          "bbox": [
+            0.1948369515042345,
+            0.15816508675980737,
+            0.2318117285976891,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Suri",
+          "bbox": [
+            0.23695122213924633,
+            0.15816508675980737,
+            0.26982180811777834,
+            0.17611520363995695
+          ],
+          "line": 3000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Document",
+          "bbox": [
+            0.07563025210084033,
+            0.18548100124911854,
+            0.15987729625541622,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "date:",
+          "bbox": [
+            0.16501678979697348,
+            0.18548100124911854,
+            0.20613273812943145,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "2025-01-11",
+          "bbox": [
+            0.2112722316709887,
+            0.18548100124911854,
+            0.3058167273256959,
+            0.20343111812926812
+          ],
+          "line": 4000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Form",
+          "bbox": [
+            0.07563025210084033,
+            0.2127969157384297,
+            0.11876134792295824,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "ID:",
+          "bbox": [
+            0.1239008414645155,
+            0.2127969157384297,
+            0.14752772996405594,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "FORM-0002-0",
+          "bbox": [
+            0.15266722350561318,
+            0.2127969157384297,
+            0.27080165318080357,
+            0.23074703261857926
+          ],
+          "line": 5000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Consent",
+          "bbox": [
+            0.07563025210084033,
+            0.26980404162916605,
+            0.1444773056927849,
+            0.2877541585093156
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "and",
+          "bbox": [
+            0.14961679923434218,
+            0.26980404162916605,
+            0.18045376048368567,
+            0.2877541585093156
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "coverage",
+          "bbox": [
+            0.1855932540252429,
+            0.26980404162916605,
+            0.2616318903049501,
+            0.2877541585093156
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "selections",
+          "bbox": [
+            0.26677138384650734,
+            0.26980404162916605,
+            0.34896632603236605,
+            0.2877541585093156
+          ],
+          "line": 6000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Consent",
+          "bbox": [
+            0.11596638655462185,
+            0.2971199561184772,
+            0.18481342732405462,
+            0.31507007299862677
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "provided",
+          "bbox": [
+            0.18995292086561186,
+            0.2971199561184772,
+            0.2608520764262736,
+            0.31507007299862677
+          ],
+          "line": 7000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Insurance",
+          "bbox": [
+            0.11596638655462185,
+            0.33274939167811013,
+            0.1971445163758863,
+            0.350699526680337
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "available",
+          "bbox": [
+            0.20228400991744355,
+            0.33274939167811013,
+            0.27523524180179887,
+            0.350699526680337
+          ],
+          "line": 8000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "Follow-up",
+          "bbox": [
+            0.11596638655462185,
+            0.36837884535982035,
+            0.19609074953223476,
+            0.3863289803620472
+          ],
+          "line": 9000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "requested",
+          "bbox": [
+            0.201230243073792,
+            0.36837884535982035,
+            0.2834436753216912,
+            0.3863289803620472
+          ],
+          "line": 9000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "PharmaDoc",
+          "bbox": [
+            0.058823529411764705,
+            0.9636579862399792,
+            0.1298016844677324,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "AI",
+          "bbox": [
+            0.1335394979525013,
+            0.9636579862399792,
+            0.1462453762022387,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "fictional",
+          "bbox": [
+            0.1499831896870076,
+            0.9636579862399792,
+            0.19556301341337315,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "training",
+          "bbox": [
+            0.19930082689814207,
+            0.9636579862399792,
+            0.24338820000656514,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        },
+        {
+          "text": "document",
+          "bbox": [
+            0.24712601349133403,
+            0.9636579862399792,
+            0.3061646533613445,
+            0.9767126232881161
+          ],
+          "line": 2000,
+          "score": null,
+          "score_source": null
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "page_number": 1,
+      "start": 82,
+      "end": 91,
+      "label": "PATIENT"
+    },
+    {
+      "page_number": 1,
+      "start": 107,
+      "end": 117,
+      "label": "DATE"
+    }
+  ],
+  "evidence": {
+    "patient_name": {
+      "page_number": 1,
+      "text": "Riya Suri"
+    },
+    "document_date": {
+      "page_number": 1,
+      "text": "2025-01-11"
+    },
+    "form_id": {
+      "page_number": 1,
+      "text": "FORM-0002-0"
+    }
+  },
+  "checkboxes": [
+    {
+      "page_number": 1,
+      "label": "Consent provided",
+      "bbox": [
+        0.07563025210084033,
+        0.29691211401425177,
+        0.09747899159663866,
+        0.31235154394299286
+      ],
+      "value": false,
+      "state": "unchecked"
+    },
+    {
+      "page_number": 1,
+      "label": "Insurance available",
+      "bbox": [
+        0.07563025210084033,
+        0.332541567695962,
+        0.09747899159663866,
+        0.3479809976247031
+      ],
+      "value": false,
+      "state": "unchecked"
+    },
+    {
+      "page_number": 1,
+      "label": "Follow-up requested",
+      "bbox": [
+        0.07563025210084033,
+        0.3681710213776722,
+        0.09747899159663866,
+        0.3836104513064133
+      ],
+      "value": false,
+      "state": "unchecked"
+    }
+  ],
+  "sha256": "aa5926700fa1521ee1384b52375020a12d22efce3d98fa8368dd834302904d87"
+}

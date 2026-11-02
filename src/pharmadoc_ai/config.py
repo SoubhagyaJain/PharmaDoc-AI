@@ -3,8 +3,9 @@
 import shutil
 from pathlib import Path
 from typing import Literal
+from urllib.parse import urlparse
 
-from pydantic import Field
+from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -40,3 +41,16 @@ class Settings(BaseSettings):
     llm_timeout_seconds: float = Field(default=30, gt=0)
     llm_context_tokens: int = Field(default=4096, ge=2048, le=8192)
     api_url: str = "http://127.0.0.1:8000"
+
+    @field_validator("ollama_host", "api_url")
+    @classmethod
+    def local_endpoint(cls, value: str) -> str:
+        parsed = urlparse(value)
+        if (
+            parsed.scheme not in {"http", "https"}
+            or parsed.hostname not in {"127.0.0.1", "localhost", "::1"}
+            or parsed.username
+            or parsed.password
+        ):
+            raise ValueError("Model and application endpoints must use loopback URLs.")
+        return value.rstrip("/")

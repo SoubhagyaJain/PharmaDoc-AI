@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "per_family": 10,
+  "layout_families_per_category": 6,
+  "split_families": {"train": [0, 1, 2, 3], "validation": [4], "test": [5]},
+  "logical_documents": {"prescription": 180, "clinical_form": 60, "regulatory": 60},
+  "test_policy": "Do not inspect or evaluate test records until training and validation choices are frozen."
+}

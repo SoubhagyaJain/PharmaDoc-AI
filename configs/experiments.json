@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "ocr_pages_per_split": 30,
+  "ocr_engines": ["tesseract", "paddle"],
+  "preprocessing_profiles": ["raw", "contrast", "adaptive", "deskew"],
+  "degradations": ["clean", "noisy", "low_resolution", "rotated", "skewed", "blurry"],
+  "extraction_methods": ["rules", "ner", "llm"],
+  "normalization": "Unicode NFKC, casefold, collapse whitespace; preserve punctuation and numeric values",
+  "render_dpi": 200,
+  "test_policy": "Report held-out results without selecting configurations from test performance."
+}

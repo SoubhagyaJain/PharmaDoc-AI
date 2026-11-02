@@ -1,0 +1,12 @@
+<View>
+  <Labels name="entities" toName="text">
+    <Label value="PATIENT" background="#F3C677"/>
+    <Label value="PRESCRIBER" background="#8BC6B1"/>
+    <Label value="DATE" background="#9FBFEB"/>
+    <Label value="MEDICATION" background="#D7A8DF"/>
+    <Label value="STRENGTH" background="#F4A99F"/>
+    <Label value="DOSE" background="#C8D58E"/>
+    <Label value="FREQUENCY" background="#B7B7EA"/>
+  </Labels>
+  <Text name="text" value="$text"/>
+</View>

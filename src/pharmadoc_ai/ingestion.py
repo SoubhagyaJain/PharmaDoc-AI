@@ -62,7 +62,9 @@ def open_document(path: Path, settings: Settings):
                 if image.width * image.height > settings.max_pixels:
                     raise InvalidDocumentError("Image exceeds the pixel limit.", "pixel_limit", 413)
                 image.verify()
-        doc = pymupdf.open(path)
+        # A bounded memory stream avoids native decoder handles retaining a
+        # malformed file while Windows is cleaning up its temporary directory.
+        doc = pymupdf.open(stream=path.read_bytes(), filetype=kind)
     except (
         UnidentifiedImageError,
         Image.DecompressionBombError,
@@ -102,7 +104,11 @@ def inspect_page(page, force_ocr: bool = False) -> PageResult:
         raise InvalidDocumentError("Page has invalid dimensions.")
     native = page.get_text("words", sort=True)
     words = [
-        Word(text=w[4], bbox=normalized_box(w[:4], width, height), line=w[5] * 1000 + w[6])
+        Word(
+            text=w[4],
+            bbox=normalized_box(pymupdf.Rect(w[:4]) * page.rotation_matrix, width, height),
+            line=w[5] * 1000 + w[6],
+        )
         for w in native
         if str(w[4]).strip()
     ]

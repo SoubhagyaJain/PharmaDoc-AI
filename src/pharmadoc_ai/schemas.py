@@ -44,6 +44,7 @@ class FieldResult(Model):
     status: Literal["extracted", "missing", "ambiguous", "invalid"] = "missing"
     raw_score: float | None = None
     score_source: str | None = None
+    rejected_value: StrictStr | StrictBool | None = None
 
 
 class MedicationResult(Model):
